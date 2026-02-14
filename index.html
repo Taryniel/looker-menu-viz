@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu de Navegação Avançado - Looker Studio</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Material Icons (opcional) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    .demo-container {
+      max-width: 100%;
+      margin: 0;
+    }
+    
+    .demo-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .demo-header h1 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .demo-header p {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+    
+    .demo-content {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .page-content {
+      display: none;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    
+    .page-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .page-content h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .info-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    
+    .config-panel {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .config-panel h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .config-item {
+      margin: 15px 0;
+    }
+    
+    .config-item label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #555;
+    }
+    
+    .config-item select,
+    .config-item input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-container">
+    <!-- Header -->
+    <div class="demo-header">
+      <h1>🎨 Menu de Navegação Avançado</h1>
+      <p>Visualização customizada para Looker Studio com navegação fluida entre páginas</p>
+    </div>
+    
+    <!-- Menu Container -->
+    <div id="menu-container" class="menu-container"></div>
+    
+    <!-- Conteúdo de Demonstração -->
+    <div class="demo-content">
+      <div id="page1" class="page-content active">
+        <h2>📊 Dashboard Principal</h2>
+        <div class="info-box">
+          <strong>Bem-vindo ao Dashboard Principal!</strong>
+          <p>Esta é uma demonstração da visualização customizada de menu para Looker Studio. O menu permite navegação fluida entre páginas sem recarregar o navegador.</p>
+        </div>
+        <p>Características principais:</p>
+        <ul>
+          <li>✅ Navegação sem reload da página</li>
+          <li>✅ Suporte a subcategorias com expansão/colapso</li>
+          <li>✅ Ícones personalizáveis</li>
+          <li>✅ Cores customizáveis por item</li>
+          <li>✅ Múltiplos estilos: Moderno, Minimalista, Card, Pills</li>
+          <li>✅ Responsivo e acessível</li>
+        </ul>
+      </div>
+      
+      <div id="page2" class="page-content">
+        <h2>📈 Análises</h2>
+        <div class="info-box">
+          <strong>Seção de Análises</strong>
+          <p>Explore análises detalhadas através dos submenus de Vendas e Marketing.</p>
+        </div>
+        <p>Esta página demonstra como o menu gerencia categorias com subcategorias.</p>
+      </div>
+      
+      <div id="page2-1" class="page-content">
+        <h2>🛒 Vendas</h2>
+        <div class="info-box">
+          <strong>Análise de Vendas</strong>
+          <p>Submenu da seção de Análises - demonstra navegação em múltiplos níveis.</p>
+        </div>
+      </div>
+      
+      <div id="page2-2" class="page-content">
+        <h2>📢 Marketing</h2>
+        <div class="info-box">
+          <strong>Análise de Marketing</strong>
+          <p>Submenu da seção de Análises - demonstra navegação em múltiplos níveis.</p>
+        </div>
+      </div>
+      
+      <div id="page3" class="page-content">
+        <h2>📄 Relatórios</h2>
+        <div class="info-box">
+          <strong>Seção de Relatórios</strong>
+          <p>Acesse e gere relatórios personalizados.</p>
+        </div>
+        <p>Esta página demonstra um item de menu simples sem subcategorias.</p>
+      </div>
+    </div>
+    
+    <!-- Painel de Configuração (Demo) -->
+    <div class="config-panel">
+      <h3>⚙️ Configurações Disponíveis no Looker Studio</h3>
+      <p style="color: #666; margin-bottom: 20px;">
+        Quando integrado ao Looker Studio, você terá acesso a todas estas configurações no painel de propriedades:
+      </p>
+      
+      <div class="config-item">
+        <label>📐 Orientação do Menu</label>
+        <select id="demo-orientation">
+          <option value="horizontal">Horizontal</option>
+          <option value="vertical">Vertical</option>
+        </select>
+      </div>
+      
+      <div class="config-item">
+        <label>🎨 Estilo do Menu</label>
+        <select id="demo-style">
+          <option value="modern">Moderno</option>
+          <option value="minimal">Minimalista</option>
+          <option value="card">Card</option>
+          <option value="pills">Pills</option>
+        </select>
+      </div>
+      
+      <div class="config-item">
+        <label>🎨 Cor de Fundo do Menu</label>
+        <input type="color" id="demo-bgcolor" value="#ffffff">
+      </div>
+      
+      <div class="config-item">
+        <label>🎨 Cor do Item Ativo</label>
+        <input type="color" id="demo-activecolor" value="#0066cc">
+      </div>
+      
+      <div class="config-item">
+        <label>📊 Tamanho da Fonte</label>
+        <input type="range" min="10" max="24" value="14" id="demo-fontsize">
+        <span id="fontsize-value">14px</span>
+      </div>
+      
+      <div class="info-box" style="margin-top: 20px;">
+        <strong>💡 Dica:</strong> No Looker Studio, você poderá configurar cada item do menu individualmente através de um JSON editável, incluindo:
+        <ul style="margin: 10px 0 0 20px;">
+          <li>Label personalizada</li>
+          <li>Ícone específico</li>
+          <li>Cor individual</li>
+          <li>Página de destino</li>
+          <li>Subcategorias ilimitadas</li>
+          <li>Badges de notificação</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@google/dscc@1.0.4/dist/dscc.min.js"></script>
+  <script src="index.js"></script>
+  
+  <script>
+    // Listener de navegação para atualizar conteúdo demo
+    window.addEventListener('menuNavigation', (event) => {
+      const pageId = event.detail.page;
+      
+      // Esconder todas as páginas
+      document.querySelectorAll('.page-content').forEach(page => {
+        page.classList.remove('active');
+      });
+      
+      // Mostrar página ativa
+      const activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.classList.add('active');
+      }
+    });
+    
+    // Controles de demonstração
+    document.getElementById('demo-orientation')?.addEventListener('change', (e) => {
+      const menu = document.querySelector('[class^="menu-"]');
+      if (menu) {
+        menu.className = menu.className.replace(/menu-(horizontal|vertical)/, `menu-${e.target.value}`);
+      }
+    });
+    
+    document.getElementById('demo-style')?.addEventListener('change', (e) => {
+      const menu = document.querySelector('[class^="menu-"]');
+      if (menu) {
+        menu.className = menu.className.replace(/menu-style-\w+/, `menu-style-${e.target.value}`);
+      }
+    });
+    
+    document.getElementById('demo-bgcolor')?.addEventListener('change', (e) => {
+      document.documentElement.style.setProperty('--menu-bg-color', e.target.value);
+    });
+    
+    document.getElementById('demo-activecolor')?.addEventListener('change', (e) => {
+      document.documentElement.style.setProperty('--item-active-color', e.target.value);
+    });
+    
+    document.getElementById('demo-fontsize')?.addEventListener('input', (e) => {
+      const value = e.target.value + 'px';
+      document.documentElement.style.setProperty('--font-size', value);
+      document.getElementById('fontsize-value').textContent = value;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Menu de Navegação Avançado",
+  "organization": "Custom Viz",
+  "description": "Menu interativo e editável com suporte a subcategorias, ícones e cores personalizadas",
+  "logoUrl": "https://via.placeholder.com/150",
+  "organizationUrl": "https://example.com",
+  "supportUrl": "https://example.com/support",
+  "packageUrl": "https://example.com",
+  "privacyPolicyUrl": "https://example.com/privacy",
+  "termsOfServiceUrl": "https://example.com/terms",
+  "devMode": true,
+  "components": [
+    {
+      "id": "advanced-menu",
+      "name": "Menu de Navegação Avançado",
+      "description": "Menu moderno e configurável para navegação entre páginas",
+      "resource": {
+        "js": "index.js",
+        "css": "styles.css",
+        "config": "config.json"
+      }
+    }
+  ]
+}

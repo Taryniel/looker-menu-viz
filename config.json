@@ -1,0 +1,196 @@
+{
+  "data": [],
+  "style": [
+    {
+      "id": "menuOrientation",
+      "label": "Orientação do Menu",
+      "type": "SELECT_SINGLE",
+      "options": [
+        {
+          "label": "Horizontal",
+          "value": "horizontal"
+        },
+        {
+          "label": "Vertical",
+          "value": "vertical"
+        }
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "id": "menuPosition",
+      "label": "Posição do Menu",
+      "type": "SELECT_SINGLE",
+      "options": [
+        {
+          "label": "Topo",
+          "value": "top"
+        },
+        {
+          "label": "Esquerda",
+          "value": "left"
+        },
+        {
+          "label": "Direita",
+          "value": "right"
+        }
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "id": "menuStyle",
+      "label": "Estilo do Menu",
+      "type": "SELECT_SINGLE",
+      "options": [
+        {
+          "label": "Moderno",
+          "value": "modern"
+        },
+        {
+          "label": "Minimalista",
+          "value": "minimal"
+        },
+        {
+          "label": "Card",
+          "value": "card"
+        },
+        {
+          "label": "Pills",
+          "value": "pills"
+        }
+      ],
+      "defaultValue": "modern"
+    },
+    {
+      "id": "menuBgColor",
+      "label": "Cor de Fundo do Menu",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "menuItemColor",
+      "label": "Cor do Texto do Item",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#333333"
+      }
+    },
+    {
+      "id": "menuItemHoverColor",
+      "label": "Cor do Texto (Hover)",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#0066cc"
+      }
+    },
+    {
+      "id": "menuItemActiveColor",
+      "label": "Cor do Item Ativo",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#0066cc"
+      }
+    },
+    {
+      "id": "menuItemActiveBg",
+      "label": "Cor de Fundo do Item Ativo",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#e6f2ff"
+      }
+    },
+    {
+      "id": "showIcons",
+      "label": "Exibir Ícones",
+      "type": "CHECKBOX",
+      "defaultValue": true
+    },
+    {
+      "id": "iconSize",
+      "label": "Tamanho do Ícone",
+      "type": "FONT_SIZE",
+      "defaultValue": "20px"
+    },
+    {
+      "id": "fontSize",
+      "label": "Tamanho da Fonte",
+      "type": "FONT_SIZE",
+      "defaultValue": "14px"
+    },
+    {
+      "id": "fontFamily",
+      "label": "Família da Fonte",
+      "type": "FONT_FAMILY",
+      "defaultValue": {
+        "font": "Roboto"
+      }
+    },
+    {
+      "id": "menuPadding",
+      "label": "Espaçamento Interno",
+      "type": "INTERVAL",
+      "defaultValue": "12"
+    },
+    {
+      "id": "itemSpacing",
+      "label": "Espaçamento Entre Itens",
+      "type": "INTERVAL",
+      "defaultValue": "8"
+    },
+    {
+      "id": "borderRadius",
+      "label": "Arredondamento das Bordas",
+      "type": "INTERVAL",
+      "defaultValue": "8"
+    },
+    {
+      "id": "showShadow",
+      "label": "Exibir Sombra",
+      "type": "CHECKBOX",
+      "defaultValue": true
+    },
+    {
+      "id": "animationDuration",
+      "label": "Duração da Animação (ms)",
+      "type": "INTERVAL",
+      "defaultValue": "300"
+    },
+    {
+      "id": "submenuBgColor",
+      "label": "Cor de Fundo do Submenu",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#f8f9fa"
+      }
+    },
+    {
+      "id": "submenuIndent",
+      "label": "Indentação do Submenu",
+      "type": "INTERVAL",
+      "defaultValue": "20"
+    },
+    {
+      "id": "showDividers",
+      "label": "Exibir Divisores",
+      "type": "CHECKBOX",
+      "defaultValue": false
+    },
+    {
+      "id": "dividerColor",
+      "label": "Cor do Divisor",
+      "type": "FILL_COLOR",
+      "defaultValue": {
+        "color": "#e0e0e0"
+      }
+    },
+    {
+      "id": "menuItems",
+      "label": "Configuração dos Itens do Menu (JSON)",
+      "type": "TEXTAREA",
+      "defaultValue": "[\n  {\n    \"id\": \"page1\",\n    \"label\": \"Dashboard Principal\",\n    \"icon\": \"home\",\n    \"page\": \"page1\",\n    \"color\": \"#0066cc\"\n  },\n  {\n    \"id\": \"page2\",\n    \"label\": \"Análises\",\n    \"icon\": \"analytics\",\n    \"page\": \"page2\",\n    \"color\": \"#ff6b6b\",\n    \"submenu\": [\n      {\n        \"id\": \"page2-1\",\n        \"label\": \"Vendas\",\n        \"icon\": \"shopping_cart\",\n        \"page\": \"page2-1\"\n      },\n      {\n        \"id\": \"page2-2\",\n        \"label\": \"Marketing\",\n        \"icon\": \"campaign\",\n        \"page\": \"page2-2\"\n      }\n    ]\n  },\n  {\n    \"id\": \"page3\",\n    \"label\": \"Relatórios\",\n    \"icon\": \"description\",\n    \"page\": \"page3\",\n    \"color\": \"#4ecdc4\"\n  }\n]"
+    }
+  ],
+  "interactions": []
+}
