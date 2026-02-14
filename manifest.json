@@ -2,22 +2,23 @@
   "name": "Menu de Navegação Avançado",
   "organization": "Custom Viz",
   "description": "Menu interativo e editável com suporte a subcategorias, ícones e cores personalizadas",
-  "logoUrl": "https://via.placeholder.com/150",
-  "organizationUrl": "https://example.com",
-  "supportUrl": "https://example.com/support",
-  "packageUrl": "https://example.com",
-  "privacyPolicyUrl": "https://example.com/privacy",
-  "termsOfServiceUrl": "https://example.com/terms",
+  "logoUrl": "https://www.gstatic.com/images/branding/product/1x/looker_48dp.png",
+  "organizationUrl": "https://github.com/taryniel/looker-menu-viz",
+  "supportUrl": "https://github.com/taryniel/looker-menu-viz",
+  "packageUrl": "https://github.com/taryniel/looker-menu-viz",
+  "privacyPolicyUrl": "https://github.com/taryniel/looker-menu-viz",
+  "termsOfServiceUrl": "https://github.com/taryniel/looker-menu-viz",
   "devMode": true,
   "components": [
     {
       "id": "advanced-menu",
       "name": "Menu de Navegação Avançado",
       "description": "Menu moderno e configurável para navegação entre páginas",
+      "iconUrl": "https://www.gstatic.com/images/branding/product/1x/looker_48dp.png",
       "resource": {
-        "js": "index.js",
-        "css": "styles.css",
-        "config": "config.json"
+        "js": "https://taryniel.github.io/looker-menu-viz/index.js",
+        "config": "https://taryniel.github.io/looker-menu-viz/config.json",
+        "css": "https://taryniel.github.io/looker-menu-viz/styles.css"
       }
     }
   ]
